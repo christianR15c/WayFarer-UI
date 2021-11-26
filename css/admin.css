@@ -1,0 +1,114 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 4fr 2fr;
+}
+.header{
+    background: white;
+	padding-top: 2px;
+	border-bottom: 7px #CFF0F5 solid;
+	border-top: 7px #CFF0F5 solid;
+    height: 80px;
+    grid-column: 1/4;
+}
+#logo span{
+	color: #33C0EF;
+	font-size: 40px;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+.vertical-menu{
+    background: white;
+}
+.vertical-menu a {
+    background-color: white; 
+    color: black; 
+    display: block; 
+    padding: 12px;
+    text-decoration: none; 
+    border-bottom: 2px #33C0EF solid;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #CFF0F5; 
+    border-bottom: #0494BE;
+  
+  }
+.trips{
+    background: #B8CCF4;
+    display: flex;
+    width: 100%;
+    overflow-y: scroll;
+    justify-content: center;
+}
+.trips .table{
+    width: 100%;
+    margin: 10px 60px;
+    text-align: center;
+}
+.trips .table table{
+    text-align: center;
+    width: 100%;
+    background: #eee;
+    height: auto;
+}
+a img{
+	height: 20px;
+}
+.add-trip{
+    background: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.add-trip .create-trip{
+    width: 100%;
+    text-align: center;
+}
+#button{
+    background: #33C0EF;
+	width: 60%;
+	border: none;
+	border-radius: 20px;
+	padding: 10px;
+	color: white;
+	text-align: center;
+	height: auto;
+	cursor: pointer;
+}
+#button:hover{
+    background: white;
+	color: #33C0EF;
+	border: 1.5px #33C0EF solid;
+}
+.footer{
+    background: #CFF0F5;
+    height: 50px;
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+form input{
+	width: 95%;
+	display: block;
+	border: none;
+	height: 40px;
+	margin: 5px 55px 5px 5px;
+	padding-left: 10px;
+	border-bottom: 3.5px #CFF0F5 solid;
+	background: none;
+	text-align: center;
+}
+form h1{
+	color: #33C0EF;
+}
+

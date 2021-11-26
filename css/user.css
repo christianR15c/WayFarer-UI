@@ -1,0 +1,76 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90px 1fr 70px;
+}
+.header{
+    background: white;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .title{
+    margin-left: 20px;
+}
+.title span{
+	color: #33C0EF;
+}
+.title h1{
+    color: #33C0EF;
+    font-style: italic;
+    font-size: 3em;
+}
+.header .search input{
+    height: 35px;
+    width: 300px;
+    border-radius: 8px;
+    border-style: none;
+    padding: 10px;
+    background: #eee;
+}
+.header .profile{
+    margin-right: 20px;
+}
+.header .profile img{
+    border-radius: 50%;
+    height: 50px;
+}
+a{
+	text-decoration: none;
+}
+.trips, .booking{
+    background: #B8CCF4;
+    display: flex;
+    width: 100%;
+    overflow-y: scroll;
+    justify-content: center;
+}
+.trips .table, .booking .table{
+    width: 100%;
+    margin: 10px 60px;
+    text-align: center;
+}
+.trips .table table, .booking .table table{
+    text-align: center;
+    width: 100%;
+    margin: 0 20px;
+    background: #eee;
+    height: auto;
+}
+a img{
+    height: 20px;
+}
+
+.footer{
+    background: #CFF0F5;
+    text-align: center;
+    grid-column: 1/3;
+}
